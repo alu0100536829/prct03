@@ -1,0 +1,39 @@
+21. "\t\n" con dobles comillas permite analizar los caracteres especiales como tabulador, retorno de carro, etc. Con '\t\n' se escribe literalmente eso, sin atender a caracteres especiales.
+22. %q
+23. %Q
+24. En c queda --4--\n--2--\n. Con <<HERE se introduce, como si fueran dobles comillas, todas las expresiones siguientes.
+25. En c queda --\#{a}--\n--#{b}--\n. Con <<'HERE' se introduce, como si fueran comillas simples, todas las expresiones anteriores. En este caso, no se evaluan las expresiones como #{a}.
+26. Los valores entre corchetes [x,y] hace que se muestren y caracteres desde la posición x. Los valores negativos atienden a empezar desde la derecha.
+ - Por ejemplo: s[0,2] mostrará "he". Desde la posición 0 se muestran 2 carácteres.
+27. En g queda "hello world" pues se ha hecho una concatenación.
+28. En e queda "...". Se repite 3 veces lo anterior.
+29. El resultado es "2 2 2 ". Se aumenta el valor de "a" y se repite 3 veces las expresión.
+30. Crea un array de palabras sin necesidad de usar comillas simples.
+31. Crea un array de palabras sin tener en cuenta que sea caracteres especiales. Los entiende de forma literal y usando la barra para evitar su confusión.
+32. Crea un array de palabras sin tener en cuenta que sea caracteres especiales. Los entiende de forma literal, sin usar la barra.
+33. Crea un array de 3 objetos nil.
+34. Se crea un array de 3 ceros. En los parámetros de new se indica el número de elementos y el valor de cada uno de ellos.
+35. Crea un array b copia del array x pasado por parámetros.
+36. Crea un array de tamaño 3 y va metiendo los valores del iterador i (desde 0) multplicados por 2.
+37. => ["b"]
+    => ["d", "e"]
+    => ["a", "b", "c"]
+    => ["a", "b"]
+    => ["d", "e"]
+
+38. => ["A", "B", "c", "d", "e"]
+    => ["A", "B", "C", "D", "E"]
+    => [1, 2, 3, "A", "B", "C", "D", "E"]
+    => [3, "A", "B", "C", "D", "E"]
+    => [3, "A", "B", "C", "D", "Z"]
+    => [3, "A", "B", "C", nil]
+
+39. => [1]
+    => [1, 2, 3]
+    => [1, 2, 3, [4, 5, 6]]
+    => [1, 2, 3, [4, 5, 6], 7, 8]
+
+40. => [1, 2, 3, 4, 5]
+    => [5, 4, 3, 2, 1]
+
+
